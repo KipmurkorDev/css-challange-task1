@@ -1,0 +1,144 @@
+body{
+    background-color: #282C47;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+}
+.col1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile{
+    height: 50%;
+    background-color: #3477eb;
+    border-radius: 20px;
+    padding: 10px;
+}
+.profile img{
+    width: 20%;
+    border-radius: 50%;
+    border:5px solid white;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    background-color: #0f2642;
+    border-radius: 20px;
+
+}
+#Weekly{
+    color: white;
+}
+.category a{
+    font-size: 20px;
+    padding: 20px;
+    color: grey;
+    cursor: pointer;
+    text-decoration: none;
+}
+.category a:focus{
+    color: white;
+}
+
+.col2{
+width: 50%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
+}
+.work_hr{
+display: flex;
+border-top: 20px solid orange;
+flex-direction: column;
+background-color: #0f2642;
+border-radius: 25px;
+padding: 10px;
+}
+.cat-type{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cat-type img{
+    justify-self: right;
+    padding-top: 40px;
+}
+.timespent p{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 10px;
+    color: grey;
+}
+.play_hr{
+display: flex;
+border-top: 20px solid skyblue;
+flex-direction: column;
+background-color: #0f2642;
+border-radius: 25px;
+padding: 10px;
+}
+.study_hr{
+display: flex;
+border-top: 20px solid #eb347d;
+flex-direction: column;
+background-color: #0f2642;
+border-radius: 25px;
+padding: 10px;
+}  
+.exercise_hr{
+display: flex;
+border-top: 20px solid lightgreen;
+flex-direction: column;
+background-color: #0f2642;
+border-radius: 25px;
+padding: 10px;
+}  
+.social_hr{
+display: flex;
+border-top: 20px solid #9B59B6;
+flex-direction: column;
+background-color: #0f2642;
+border-radius: 25px;
+padding: 10px;
+ }  
+.selfcare_hr{
+display: flex;
+border-top: 20px solid yellow;
+flex-direction: column;
+background-color: #0f2642;
+border-radius: 25px;
+padding: 10px;
+}  
+@media only screen and (max-width:760px) {
+    .container{
+    height: 100vh;
+    flex-direction: column;
+    font-size: 12px;
+    }
+    .timespent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .timespent p {
+        padding-bottom:30px;
+        justify-self: right;
+        text-align: right;
+    }
+    .col1{
+    height: 50%;
+    width: 100%;
+    }
+    .col2{
+    height: 50%;
+    width: 100%;
+    grid-template-columns:1fr;
+    }
+    .profile{
+        height: 70%;
+    }
+}
